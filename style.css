@@ -150,7 +150,7 @@ button.start {
 .taskHead {
     border-bottom: solid 2px var(--lightest);
     padding-bottom: -2rem;
-    margin-bottom: .5rem;
+    /* margin-bottom: .5rem; */
 }
 
 .taskHead p {
@@ -163,7 +163,7 @@ button.start {
     background-color: white;
     display: flex;
     justify-content: space-between;
-    margin-bottom: .5rem;
+    /* margin-bottom: .5rem; */
     border-radius: 5px;
 }
 
@@ -176,6 +176,13 @@ button.dashed {
     padding: 1rem;
     border: dashed 2px var(--lightest);
     border-radius: 5px;
+}
+
+.projection {
+    background-color: var(--lighter);
+    color: white;
+    padding: 1.5rem;
+    border-top: solid 1px white;
 }
 
 .breaks {
