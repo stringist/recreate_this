@@ -1,7 +1,7 @@
 @font-face {
     font-family: "arial rounded";
     src: url(Arial\ Rounded\ Bold.ttf) format(truetype);
-    /* font-display: swap; */
+    font-display: swap;
 }
 
 :root {
@@ -9,8 +9,7 @@
     --lighter: #df645f;
     --darker: #c94b46;
     -darkest: #653336;
-    --w: #ffff;
-    --font: "arial rounded", sans-serif;
+    --primaryfont: "arial rounded", sans-serif;
 }
 
 * {
@@ -19,13 +18,13 @@
 
 body {
     margin: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    background-color: var(--coral);
+    font-family: var(--primaryfont);
 }
 
-span {
-    background-color: var(--coral);
-    grid-column: 1/4;
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 header {
@@ -40,12 +39,23 @@ ul {
 }
 
 section {
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+section>* {
     grid-column: 2/3;
 }
 
 section.stack {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
+}
+
+section.whiteBG,
+footer {
+    background-color: white;
 }
 
 section.stack>* {
