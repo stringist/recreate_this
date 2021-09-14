@@ -11,9 +11,9 @@
     --coral: #db524d;
     --lighter: #df645f;
     --darker: #c94b46;
-    -darkest: #653336;
+    --darkest: #653336;
     --arial: "ArialRounded", sans-serif;
-    --primaryfont: 'M PLUS Rounded 1c', sans-serif;
+    --primaryfont: "M PLUS Rounded 1c", sans-serif;
 }
 
 * {
@@ -34,6 +34,14 @@ main {
 header {
     background-color: var(--coral);
     grid-column: 2/3;
+    color: white;
+}
+
+h1,
+h2,
+p,
+ol {
+    color: var(--darkest);
 }
 
 ul {
@@ -46,6 +54,26 @@ section {
     grid-column: 1/4;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+p {
+    line-height: 2rem;
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+
+ol {
+    line-height: 2rem;
+    font-weight: 200;
+    font-size: 1.1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    grid-column: 1/4;
 }
 
 section>* {
@@ -68,10 +96,10 @@ section.stack>* {
     margin-right: 2vw;
 }
 
-footer {
-    grid-column: 1/4;
-}
-
 .timer {
     background-color: var(--lighter);
+}
+
+.breaks {
+    color: white;
 }
