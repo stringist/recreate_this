@@ -9,7 +9,7 @@
     --lighter: #df645f;
     --darker: #c94b46;
     -darkest: #653336;
-    --w: #FFFF;
+    --w: #ffff;
     --font: "arial rounded", sans-serif;
 }
 
@@ -23,6 +23,11 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+span {
+    background-color: var(--coral);
+    grid-column: 1/4;
+}
+
 header {
     background-color: var(--coral);
     grid-column: 2/3;
@@ -34,12 +39,25 @@ ul {
     justify-content: space-evenly;
 }
 
-ul.navButtons {}
-
 section {
     grid-column: 2/3;
 }
 
+section.stack {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+section.stack>* {
+    grid-column: 2/3;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
 footer {
     grid-column: 1/4;
+}
+
+.timer {
+    background-color: var(--lighter);
 }
