@@ -16,3 +16,35 @@
 * {
     box-sizing: border-box;
 }
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+header {
+    background-color: var(--coral);
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+nav {
+    border: solid #10c71f 1px;
+    grid-columns: 2/3;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+section {
+    grid-column: 2/3;
+}
+
+footer {
+    grid-column: 1/4;
+}
