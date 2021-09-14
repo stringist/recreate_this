@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "arial rounded";
+    src: url(Arial\ Rounded\ Bold.ttf) format(truetype);
+    /* font-display: swap; */
+}
+
+:root {
+    --coral: #db524d;
+    --lighter: #df645f;
+    --darker: #c94b46;
+    -darkest: #653336;
+    --w: #FFFF;
+    --font: "arial rounded", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
