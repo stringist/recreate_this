@@ -1,15 +1,19 @@
+/* why isn't this font face working? */
+
 @font-face {
-    font-family: "arial rounded";
-    src: url(Arial\ Rounded\ Bold.ttf) format(truetype);
+    font-family: "ArialRounded";
     font-display: swap;
+    src: url(arialrounded.ttf) format(truetype);
 }
 
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700&display=swap");
 :root {
     --coral: #db524d;
     --lighter: #df645f;
     --darker: #c94b46;
     -darkest: #653336;
-    --primaryfont: "arial rounded", sans-serif;
+    --arial: "ArialRounded", sans-serif;
+    --primaryfont: 'M PLUS Rounded 1c', sans-serif;
 }
 
 * {
