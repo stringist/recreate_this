@@ -90,11 +90,6 @@ section>* {
     grid-column: 2/3;
 }
 
-section.stack {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-}
-
 section.whiteBG,
 footer {
     background-color: white;
@@ -103,7 +98,6 @@ footer {
 section.stack>* {
     grid-column: 2/3;
     width: 28rem;
-    justify-self: center;
 }
 
 .timer {
@@ -119,25 +113,29 @@ section.stack>* {
     font-size: 7rem;
     font-weight: 600;
     font-family: var(--primaryfont);
+    padding-bottom: 2rem;
 }
 
 button.start {
     color: var(--coral);
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-size: 1.3rem;
+    font-weight: 700;
     text-transform: uppercase;
-    padding: .8rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding: 1rem;
+    width: 10rem;
     border: none;
     border-radius: 3px;
+    align-self: center;
+    margin-top: -1vw;
+    margin-bottom: 2vw;
+    border-bottom: solid 5px rgb(221, 221, 221);
 }
 
 .clock,
 .taskName,
 .taskStatus,
 .projection {
-    /* text-align: center; */
+    text-align: center;
 }
 
 .taskStatus {
