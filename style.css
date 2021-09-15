@@ -126,6 +126,8 @@ footer {
     text-align: center;
     font-size: .8rem;
     padding: 1rem;
+    padding-top: 2rem;
+    border-top: solid 1px rgba(211, 211, 211, 0.653);
 }
 
 .logo {
@@ -262,6 +264,7 @@ ul.bullets {
     display: list-item;
     line-height: 2rem;
     color: var(--bodycolor);
+    margin-bottom: 2rem;
 }
 
 .bullets li::before {
@@ -275,8 +278,6 @@ ul.bullets {
 
 .bottomGroup {
     text-align: center;
-    margin-top: 4rem;
-    /* border-top: solid 2px var(--bodycolor); */
 }
 
 .pseudoNav a {
