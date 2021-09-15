@@ -102,12 +102,16 @@ footer {
 
 section.stack>* {
     grid-column: 2/3;
-    margin-left: 2vw;
-    margin-right: 2vw;
+    width: 28rem;
+    justify-self: center;
 }
 
 .timer {
     background-color: var(--lighter);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 .clock {
@@ -133,7 +137,7 @@ button.start {
 .taskName,
 .taskStatus,
 .projection {
-    text-align: center;
+    /* text-align: center; */
 }
 
 .taskStatus {
@@ -186,6 +190,9 @@ button.dashed {
 }
 
 .breaks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     color: white;
 }
 
