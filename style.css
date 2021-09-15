@@ -1,10 +1,13 @@
 /* why isn't this font face working? */
 
 @font-face {
-    font-family: "ArialRounded";
+    font-family: "Arial Rounded Bold";
     font-display: swap;
-    src: url(arialrounded.ttf) format(truetype);
+    src: url(./arialrounded.ttf) format(truetype);
 }
+
+
+/* why aren't imports working? */
 
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700&display=swap");
@@ -14,30 +17,32 @@
     --lightest: #f1b9b7;
     --darker: #c94b46;
     --darkest: #653336;
-    --arial: 'ArialRounded', sans-serif;
+    --arial: "Arial Rounded Bold", sans-serif;
     --primaryfont: 'M PLUS Rounded 1c', sans-serif;
     --altfont: 'Varela Round', sans-serif;
 }
 
 * {
     box-sizing: border-box;
+    font-family: var(--primaryfont);
 }
 
 body {
     margin: 0;
     background-color: var(--coral);
-    font-family: var(--arial);
-}
-
-main {
-    /* display: grid; */
-    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* font-family: var(--arial); */
 }
 
 header {
     background-color: var(--coral);
     grid-column: 2/3;
+    max-width: 100%;
     color: white;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px var(--darker);
+    margin-left: 20vw;
+    margin-right: 20vw;
 }
 
 h1,
@@ -51,6 +56,17 @@ ul {
     list-style: none;
     display: flex;
     justify-content: space-evenly;
+}
+
+ul.navButtons {
+    width: 40%;
+    font-size: .8rem;
+    margin-right: 0;
+    justify-content: space-between;
+}
+
+ul.navButtons>li {
+    background-color: var(--lighter);
 }
 
 section {
@@ -88,6 +104,14 @@ footer {
     text-align: center;
     font-size: .8rem;
     padding: 1rem;
+}
+
+.logo {
+    background-image: url(./SVG/logo.svg);
+    width: 9rem;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 section.whiteBG,
