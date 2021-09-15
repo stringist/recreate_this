@@ -41,8 +41,8 @@ header {
     display: flex;
     justify-content: space-between;
     border-bottom: solid 1px var(--darker);
-    margin-left: 20vw;
-    margin-right: 20vw;
+    margin-left: 27vw;
+    margin-right: 27vw;
 }
 
 h1,
@@ -59,36 +59,29 @@ ul {
 }
 
 ul.navButtons {
-    width: 40%;
+    /* width: 50%; */
     font-size: .8rem;
-    margin-right: 0;
     justify-content: space-between;
 }
 
 ul.navButtons>li {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: .8rem;
+    padding-right: .8rem;
+    display: flex;
+    align-items: center;
     background-color: var(--lighter);
-    height: 3rem;
+    border-radius: 3px;
+    margin-left: 1vw;
 }
 
-#graph {
-    background-image: url(/SVG/graph.svg);
-    background-position: contain;
-    width: 5rem;
-    height: auto;
+ul.navButtons>li>* {
+    margin-right: .3rem;
 }
 
-#setting {
-    background-image: url();
-    background-position: cover;
-    width: 2rem;
-    height: auto;
-}
-
-#user {
-    background-image: url();
-    background-position: cover;
-    width: 2rem;
-    height: auto;
+.navButtons>li>img {
+    height: 1rem;
 }
 
 section {
