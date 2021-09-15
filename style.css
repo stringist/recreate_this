@@ -87,7 +87,7 @@ ul.navButtons>li>* {
 section {
     grid-column: 1/4;
     display: grid;
-    grid-template-columns: 20vw 60vw 20vw;
+    grid-template-columns: 25vw 50vw 25vw;
 }
 
 section>* {
