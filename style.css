@@ -180,6 +180,7 @@ footer {
 }
 
 button.start {
+    background-color: white;
     color: var(--coral);
     font-size: 1.3rem;
     font-weight: 700;
