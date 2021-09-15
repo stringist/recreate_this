@@ -261,8 +261,13 @@ ul.bullets {
     color: var(--bodycolor);
 }
 
-.bullets li {
-    list-style-type: disc;
+.bullets li::before {
+    content: "\2022";
+    color: var(--lighter);
+    font-weight: bold;
+    display: inline-block;
+    width: 1rem;
+    margin-left: -1rem;
 }
 
 .pseudoNav a {
