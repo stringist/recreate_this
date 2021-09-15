@@ -265,10 +265,9 @@ button.start {
 #greycheck,
 #redcheck,
 #meatball,
-#meatball2,
-#pinkplus {
-    height: 30px;
-    width: 30px;
+#meatball2 {
+    height: 25px;
+    width: 25px;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -279,6 +278,17 @@ button.start {
 
 #greycheck {
     background-image: url(/SVG/greycheck.svg)
+}
+
+#redcheck {
+    background-image: url(/svg/redcheck.svg);
+}
+
+#addTask::before {
+    content: url(/SVG/plus.svg);
+    display: inline-block;
+    width: 1rem;
+    margin-right: .5rem;
 }
 
 button.dashed {
