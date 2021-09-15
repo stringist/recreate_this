@@ -291,26 +291,26 @@ button.start {
 }
 
 #greycheck {
-    background-image: url(/SVG/greycheck.svg)
+    background-image: url(./SVG/greycheck.svg)
 }
 
 #redcheck {
-    background-image: url(/svg/redcheck.svg);
+    background-image: url(./SVG/redcheck.svg);
 }
 
 #addTask::before {
-    content: url(/SVG/plus.svg);
+    content: url(./SVG/plus.svg);
     display: inline-block;
     width: .8rem;
     margin-right: .5rem;
 }
 
 #meatBall {
-    background-image: url(/SVG/pinkmeat.svg);
+    background-image: url(./SVG/pinkmeat.svg);
 }
 
 .meatBall2 {
-    background-image: url(/SVG/greymeat.svg);
+    background-image: url(./SVG/greymeat.svg);
     margin-right: .5rem;
 }
 
