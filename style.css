@@ -61,6 +61,16 @@ h1 {
     font-size: 2rem;
 }
 
+h1,
+h2 {
+    margin-bottom: 1.5rem;
+}
+
+h2::first-letter {
+    border-bottom: solid 4px var(--lightest);
+    padding-bottom: .8rem;
+}
+
 ul {
     list-style: none;
     display: flex;
