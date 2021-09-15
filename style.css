@@ -255,10 +255,10 @@ button.start {
     color: rgb(38, 38, 38);
     font-size: .9rem;
     font-weight: 600;
-    display: inline-block;
 }
 
 .completedTask p {
+    margin: 1rem;
     text-decoration: line-through;
     font-size: .9rem;
     font-weight: 600;
@@ -310,6 +310,10 @@ button.start {
 .rightSide {
     display: flex;
     justify-self: right;
+}
+
+.rightSide p {
+    color: rgb(174, 174, 174);
 }
 
 button.dashed {
