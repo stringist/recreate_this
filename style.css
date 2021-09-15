@@ -227,6 +227,8 @@ button.start {
     border-bottom: solid 2px var(--lightest);
     padding-bottom: -2rem;
     margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 .taskHead p {
@@ -264,8 +266,8 @@ button.start {
 
 #greycheck,
 #redcheck,
-#meatball,
-#meatball2 {
+#meatBall,
+.meatBall2 {
     height: 25px;
     width: 25px;
     background-repeat: no-repeat;
@@ -289,6 +291,10 @@ button.start {
     display: inline-block;
     width: 1rem;
     margin-right: .5rem;
+}
+
+#meatBall {
+    background-image: url(/SVG/pinkmeat.svg);
 }
 
 button.dashed {
