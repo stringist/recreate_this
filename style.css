@@ -1,7 +1,7 @@
 /* why isn't this font face working? */
 
 @font-face {
-    font-family: "Arial Rounded Bold";
+    font-family: "Arial";
     font-display: swap;
     src: url(./arialrounded.ttf) format(truetype);
 }
@@ -17,7 +17,8 @@
     --lightest: #f1b9b7;
     --darker: #c94b46;
     --darkest: #653336;
-    --arial: "Arial Rounded Bold", sans-serif;
+    --bodycolor: #785e60;
+    --arial: "Arial", sans-serif;
     --primaryfont: 'M PLUS Rounded 1c', sans-serif;
     --altfont: 'Varela Round', sans-serif;
 }
@@ -30,7 +31,6 @@
 body {
     margin: 0;
     background-color: var(--coral);
-    /* font-family: var(--arial); */
 }
 
 header {
@@ -95,8 +95,9 @@ section>* {
 }
 
 p {
+    color: var(--bodycolor);
     line-height: 2rem;
-    font-weight: 200;
+    font-weight: 400;
     font-size: 1.2rem;
 }
 
@@ -151,7 +152,6 @@ footer {
     color: white;
     font-size: 7rem;
     font-weight: 600;
-    font-family: var(--primaryfont);
     padding: 1rem;
 }
 
