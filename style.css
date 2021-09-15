@@ -308,6 +308,7 @@ button.start {
 
 #meatBall {
     background-image: url(./SVG/pinkmeat.svg);
+    margin-right: .5rem;
 }
 
 .meatBall2 {
