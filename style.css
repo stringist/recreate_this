@@ -262,6 +262,25 @@ button.start {
     color: rgb(174, 174, 174)
 }
 
+#greycheck,
+#redcheck,
+#meatball,
+#meatball2,
+#pinkplus {
+    height: 30px;
+    width: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-left: 1rem;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#greycheck {
+    background-image: url(/SVG/greycheck.svg)
+}
+
 button.dashed {
     /* pick this color later */
     color: var(--lightest);
