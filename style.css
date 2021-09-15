@@ -256,7 +256,6 @@ button.start {
     font-size: .9rem;
     font-weight: 600;
     display: inline-block;
-    margin-left: 0;
 }
 
 .completedTask p {
@@ -302,6 +301,10 @@ button.start {
 .meatBall2 {
     background-image: url(/SVG/greymeat.svg);
     margin-right: .5rem;
+}
+
+.leftSide {
+    display: flex;
 }
 
 .rightSide {
