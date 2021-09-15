@@ -189,7 +189,7 @@ button.start {
 .currentBreak {
     background-color: var(--otherdarker);
     font-weight: 600;
-    padding: 0rem 1rem 0rem 1rem;
+    padding: .2rem 1rem 0rem 1rem;
     border-radius: 3px;
     margin-left: -1rem;
     margin-right: -1rem;
