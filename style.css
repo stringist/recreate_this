@@ -97,15 +97,17 @@ footer {
 
 section.stack>* {
     grid-column: 2/3;
-    width: 28rem;
+    width: 30rem;
 }
 
 .timer {
     background-color: var(--lighter);
-    border-radius: 5px;
+    border-radius: 8px;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
+    margin-top: 2vw;
 }
 
 .clock {
@@ -113,7 +115,7 @@ section.stack>* {
     font-size: 7rem;
     font-weight: 600;
     font-family: var(--primaryfont);
-    padding-bottom: 2rem;
+    padding: 1rem;
 }
 
 button.start {
@@ -122,11 +124,10 @@ button.start {
     font-weight: 700;
     text-transform: uppercase;
     padding: 1rem;
-    width: 10rem;
+    width: 12rem;
     border: none;
     border-radius: 3px;
     align-self: center;
-    margin-top: -1vw;
     margin-bottom: 2vw;
     border-bottom: solid 5px rgb(221, 221, 221);
 }
@@ -136,6 +137,26 @@ button.start {
 .taskStatus,
 .projection {
     text-align: center;
+}
+
+.breaks {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 1.5rem -1rem 0rem auto;
+    color: white;
+    margin-left: -1rem;
+}
+
+.currentBreak {
+    background-color: var(--darker);
+    font-weight: 600;
+    padding: .3rem 1rem .3rem 1rem;
+    border-radius: 3px;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    margin-top: -.3rem;
 }
 
 .taskStatus {
@@ -185,13 +206,6 @@ button.dashed {
     color: white;
     padding: 1.5rem;
     border-top: solid 1px white;
-}
-
-.breaks {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    color: white;
 }
 
 .pseudoNav a {
