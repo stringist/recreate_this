@@ -255,13 +255,15 @@ button.start {
     color: rgb(38, 38, 38);
     font-size: .9rem;
     font-weight: 600;
+    display: inline-block;
+    margin-left: 0;
 }
 
 .completedTask p {
     text-decoration: line-through;
     font-size: .9rem;
     font-weight: 600;
-    color: rgb(174, 174, 174)
+    color: rgb(174, 174, 174);
 }
 
 #greycheck,
@@ -295,6 +297,16 @@ button.start {
 
 #meatBall {
     background-image: url(/SVG/pinkmeat.svg);
+}
+
+.meatBall2 {
+    background-image: url(/SVG/greymeat.svg);
+    margin-right: .5rem;
+}
+
+.rightSide {
+    display: flex;
+    justify-self: right;
 }
 
 button.dashed {
