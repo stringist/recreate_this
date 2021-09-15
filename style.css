@@ -122,7 +122,7 @@ a {
 footer {
     grid-column: 1/4;
     color: var(--bodycolor);
-    font-weight: 100;
+    font-weight: 200;
     text-align: center;
     font-size: .8rem;
     padding: 1rem;
@@ -287,6 +287,16 @@ ul.bullets {
 }
 
 ul.pseudoNav {
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 30vw;
+    padding-right: 30vw;
+}
+
+#SoMeIcon {
+    width: 10rem;
+    height: auto;
+    margin-top: 1.2rem;
+}
+
+.thin {
+    font-size: 1rem;
 }
