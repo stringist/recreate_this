@@ -16,6 +16,7 @@
     --lighter: #df645f;
     --lightest: #f1b9b7;
     --darker: #c94b46;
+    --otherdarker: #be5551;
     --darkest: #653336;
     --bodycolor: #785e60;
     --arial: "Arial", sans-serif;
@@ -152,7 +153,7 @@ footer {
     color: white;
     font-size: 7rem;
     font-weight: 600;
-    padding: 1rem;
+    /* padding: 1rem; */
 }
 
 button.start {
@@ -160,8 +161,8 @@ button.start {
     font-size: 1.3rem;
     font-weight: 700;
     text-transform: uppercase;
-    padding: 1rem;
-    width: 12rem;
+    padding: .8rem;
+    width: 12.5rem;
     border: none;
     border-radius: 3px;
     margin-bottom: 2vw;
@@ -186,9 +187,9 @@ button.start {
 }
 
 .currentBreak {
-    background-color: var(--darker);
+    background-color: var(--otherdarker);
     font-weight: 600;
-    padding: .3rem 1rem .3rem 1rem;
+    padding: 0rem 1rem 0rem 1rem;
     border-radius: 3px;
     margin-left: -1rem;
     margin-right: -1rem;
@@ -200,16 +201,21 @@ button.start {
     text-transform: uppercase;
     font-size: .8rem;
     font-weight: 400;
+    margin-bottom: 0;
 }
 
 .taskName {
+    margin-top: -.5rem;
     color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0;
 }
 
 .taskHead {
     border-bottom: solid 2px var(--lightest);
     padding-bottom: -2rem;
-    /* margin-bottom: .5rem; */
+    margin-bottom: 1rem;
 }
 
 .taskHead p {
@@ -222,7 +228,7 @@ button.start {
     background-color: white;
     display: flex;
     justify-content: space-between;
-    /* margin-bottom: .5rem; */
+    margin-bottom: .5rem;
     border-radius: 5px;
 }
 
@@ -232,16 +238,20 @@ button.dashed {
     font-size: 1rem;
     font-weight: 700;
     background-color: var(--darker);
+    margin-top: .2rem;
+    margin-bottom: 1rem;
     padding: 1rem;
-    border: dashed 2px var(--lightest);
+    border: dashed 2px var(--lighter);
     border-radius: 5px;
 }
 
 .projection {
     background-color: var(--lighter);
     color: white;
-    padding: 1.5rem;
-    border-top: solid 1px white;
+    margin-top: 1rem;
+    padding: 1.2rem;
+    border-top: solid 1px var(--lightest);
+    margin-bottom: 6rem;
 }
 
 .pseudoNav a {
